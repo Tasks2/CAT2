@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="dimensions.css">
+    <link rel="stylesheet" href="ourwork.css">
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Logo.jpg" alt="COMPANY LOGO" onclick=fxn()>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ourwork.html" id="active">OUR WORK</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="work" id="hideIt">
+        <p class="service"><b style="font-family: 'Roboto', sans-serif;">1. Irrigation Services: </b> Designing and installing irrigation systems, as well as providing maintenance and repair services.
+        </p>
+        <div class="s1">
+            <img src="irr1.jpeg" alt="DRIP IRRIGATION" class="image">
+            <img src="irr2.jpg" alt="SPRINKLER IRRIGATION" class="image">
+        </div>
+        <p class="service"><b style="font-family: 'Roboto', sans-serif; ">2. Equipment Rental and Sales:</b> Offering a range of farm machinery and equipment for rent or purchase, including tractors, harvesters, and implements.</p>
+        <div class="s2">
+            <img src="harvestequip_hire.jpg" alt="HARVEST EQUIPMENT FOR HIRE" class="image">
+            <img src="tractor_hire.jpeg" alt="TRACTORS FOR HIRE" class="image">
+            <video src="tractor video.mp4" controls type="mp4/video" class="vid"></video>
+        </div>
+        <p class="service"><b style="font-family: 'Roboto', sans-serif;">3. Harvesting and Post-Harvest Services:</b> Providing harvesting equipment, as well as services for crop handling, storage, and transportation.</p>
+        <div class="s3">
+            <img src="harvest service.jpg" alt="" class="image">
+            <img src="postharvest equip.jpg" alt="POST HARVEST EQUIPMENT" class="image">
+        </div>
+        <div class="s4">
+            <p class="service"><b style="font-family: 'Roboto', sans-serif;">4. Pest and Disease Management: </b> Offering solutions for pest and disease control, including integrated pest management (IPM) practices and pesticide recommendations</p>
+        </div>
+        <div class="s5">
+            <p class="service"><b style="font-family: 'Roboto', sans-serif;">5. Fertilizer and Agrochemical Sales:</b> Providing a variety of fertilizers, pesticides, and herbicides, along with advice on their safe and effective use.</p>
+        </div>
+    </div>
+</body>
+<script>
+    function fxn(){
+        var x = window.matchMedia("(max-width: 430px)");
+        if (x.matches){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+        }
+    }
+</script>
+</html>

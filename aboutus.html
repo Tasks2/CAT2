@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="dimensions.css">
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Logo.jpg" alt="COMPANY LOGO" onclick=fxn()>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html" id="active">ABOUT US</a></li>
+                <li><a href="ourwork.html">OUR WORK</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="texts" id="hideIt">
+        <h3>Mission:</h3>
+        <p>Our mission is to empower farmers by equipping them with the tools, knowledge, and resources they need to thrive. We are passionate about driving agricultural innovation and fostering a community of farmers who are resilient, prosperous, and environmentally conscious.</p>
+        <h3>Vision:</h3>
+        <p>Our vision is to become the go-to partner for farmers worldwide, offering a wide range of high-quality products, cutting-edge technologies, and expert guidance. We aspire to be at the forefront of agricultural advancements, ensuring that farmers have access to the best tools and practices to maximize their productivity and yield.</p>
+        <h3>Core values:</h3>
+        <ol>
+            <li>Excellence: We strive for excellence in everything we do, from the products we develop to the services we provide. We are committed to delivering exceptional quality and value to our customers.</li>
+            <li>Sustainability: We believe in sustainable farming practices that preserve and protect the environment for future generations. Our solutions are designed to promote ecological balance and minimize the ecological footprint of farming.</li>
+            <li>Integrity: We conduct our business with the utmost integrity, maintaining transparency, honesty, and ethical standards. We value the trust placed in us by our customers and partners and work diligently to uphold it.</li>
+            <li>Collaboration: We foster a culture of collaboration, both internally and with our customers and partners. By working together, we can leverage collective knowledge and expertise to drive innovation and achieve shared success.</li>
+        </ol>
+    </div>
+</body>
+<script>
+    function fxn(){
+        var x = window.matchMedia("(max-width: 430px)");
+        if (x.matches){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+        }
+    }
+</script>
+</html>

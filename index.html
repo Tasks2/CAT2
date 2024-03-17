@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Farmer's Growth</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="dimensions.css">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Logo.jpg" alt="COMPANY LOGO" onclick=fxn()>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" id="active">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ourwork.html">OUR WORK</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="welcome_message" id="hideIt">
+        <p><b style="line-height: 27px;">Welcome to Farmers Growth, your one-stop solution for all your farming needs.</b> <br>We are dedicated to supporting and empowering farmers with top-quality products and services. Whether you are a small-scale farmer or a large agricultural enterprise, we have everything you need to achieve success in your farming endeavors. From seeds and fertilizers to advanced farming equipment, our wide range of products ensures that you have access to the best resources available. Our team of experienced professionals is always ready to provide you with expert advice and guidance to maximize your yields and profitability. At Farmers Growth, we are committed to the growth and prosperity of the farming community. Join us today and experience the difference!</p>
+    </div>
+</body>
+<script>
+    function fxn(){
+        var x = window.matchMedia("(max-width: 430px)");
+        if (x.matches){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+        }
+    }
+</script>
+</html>

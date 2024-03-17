@@ -1,0 +1,23 @@
+.container{
+    font-family: 'EB Garamond', serif;
+    line-height: 31px;
+    font-size: 28px;
+    font-weight: 540;
+    letter-spacing: 2px;
+    
+}
+
+@media screen and (max-width:430px){
+    nav{
+        display: block;
+    }
+    .logo img{
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+}

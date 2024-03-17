@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="dimensions.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" >
+            <img src="Logo.jpg" alt="COMPANY LOGO" onclick=fxn() >
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ourwork.html">OUR WORK</a></li>
+                <li><a href="contact.html" id="active">CONTACT US</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+            </ul>
+            
+        </div>
+       
+    </nav>
+    <center><div class="container" id="hideIt">
+        <h3>Contact Details </h3><br>
+        Telephone: 0722445566 <br>
+        Email address: farmersgrowth@gmail.com <br>
+        P.O BOX 33427-00800,  NAIROBI<br>
+    </div></center>
+</body>
+<script>
+    
+    /*function showMenu(){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+    }*/
+    
+    function fxn(){
+        var x = window.matchMedia("(max-width: 430px)");
+        if (x.matches){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+        }
+    }
+</script>
+</html>

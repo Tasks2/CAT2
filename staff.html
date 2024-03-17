@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAFF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="dimensions.css">
+    <link rel="stylesheet" href="staff.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Logo.jpg" alt="COMPANY LOGO" onclick=fxn()>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ourwork.html">OUR WORK</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="staff.html" id="active">STAFF</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="texts" id="hideIt">
+        <p>Our team comprises dedicated professionals who are passionate about agriculture and share a common goal of supporting farmers. With diverse backgrounds and expertise, we bring together a wealth of knowledge in agronomy, technology, and business to provide comprehensive solutions tailored to the unique needs of each farmer.</p>
+        <i class="fa-sharp fa-regular fa-bars"></i> 
+    </div>
+</body>
+<script>
+    function fxn(){
+        var x = window.matchMedia("(max-width: 430px)");
+        if (x.matches){
+        const bar = document.querySelector('.navbar');
+        bar.style.display = 'block';
+        const cont = document.querySelector('#hideIt');
+        cont.style.display = 'none';
+        }
+    }
+</script>
+</html>

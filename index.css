@@ -1,0 +1,41 @@
+/*GENERAL FORMATING FOR ALL PAGES START*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*BODY START*/
+.welcome_message p {
+    margin-top: 6px;
+    font-family: 'EB Garamond', serif;
+    padding: 30px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 27px;
+    font-weight: 540;
+}
+
+/*BODY END*/
+@media screen and (max-width:430px){
+    .welcome_message p {
+        font-family: 'EB Garamond', serif;
+        padding: 20px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 26px;
+        font-weight: 540;
+    }
+    nav{
+        display: block;
+    }
+    .logo img{
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+}

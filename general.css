@@ -1,0 +1,56 @@
+/*GENERAL FORMATING FOR ALL PAGES START*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body Image and Formating*/
+body{
+    background-image: url(bg.JPEG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial;
+    height: 100vh;
+}
+/*HEADER START*/
+nav{
+    width: 100%;
+    display:inline-flex;
+    text-align: center;
+    height: 95px;
+}
+ .logo img{
+    height: 90px;
+    border-radius: 3.5px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.navbar ul{
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+}
+.navbar ul li{
+    display: inline-flex;
+    overflow: hidden;
+    margin-top: 18.3px;
+    padding: 10px 12px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18.5px;
+    color: #800000;
+}
+.navbar ul li a:hover{
+    text-decoration:#ADFF2F;
+    transition: 0.24s;
+    color: #75be08;
+}
+#active{
+    color: #75be08;
+}
+/*HEADER END*/
+/*GENERAL FORMATING FOR ALL PAGES END*/
